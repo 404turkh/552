@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: #eef2f6;
+  color: #111;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  width: min(1000px, calc(100% - 32px));
+  margin: 0 auto;
+}
+
+.topbar {
+  background: #08111f;
+  padding: 20px 0;
+}
+
+.topbar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.back-link {
+  color: #9cff39;
+  font-weight: 700;
+}
+
+.service-hero {
+  padding: 60px 0 30px;
+}
+
+.service-box {
+  border-radius: 28px;
+  padding: 40px;
+  color: #fff;
+  box-shadow: 0 18px 40px rgba(0,0,0,.12);
+}
+
+.service-box h1 {
+  font-size: clamp(34px, 5vw, 50px);
+  margin-bottom: 14px;
+}
+
+.service-box p {
+  font-size: 18px;
+  line-height: 1.7;
+  max-width: 750px;
+}
+
+.content {
+  padding: 30px 0 70px;
+}
+
+.info-card {
+  background: #fff;
+  border-radius: 24px;
+  padding: 28px;
+  box-shadow: 0 12px 30px rgba(0,0,0,.08);
+  margin-bottom: 22px;
+}
+
+.info-card h2 {
+  margin-bottom: 14px;
+  font-size: 26px;
+}
+
+.info-card p,
+.info-card li {
+  line-height: 1.8;
+  color: #333;
+}
+
+.info-card ul {
+  padding-left: 18px;
+}
+
+.action-row {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50px;
+  padding: 0 22px;
+  border-radius: 999px;
+  font-weight: 800;
+}
+
+.btn-primary {
+  background: #111;
+  color: #fff;
+}
+
+.btn-light {
+  background: #f3f5f7;
+  color: #111;
+}
+
+.instagram-bg { background: #f51085; }
+.tiktok-bg { background: #1f242b; }
+.youtube-bg { background: #ff3636; }
+.x-bg { background: #000; }
+.facebook-bg { background: #3d87ea; }
+.spotify-bg { background: #31d164; }
+.telegram-bg { background: #31a3df; }
+.trustpilot-bg { background: #10bf7a; }
+.whatsapp-bg { background: #31d164; }
+.linkedin-bg { background: #226fcb; }
+.twitch-bg { background: #9250f2; }
+.kwai-bg { background: #ff5a0a; }
+.kick-bg { background: #48ff0a; color: #111; }
+.discord-bg { background: #5865f2; }
+.soundcloud-bg { background: #ff6500; }
+.snapchat-bg { background: #fff600; color: #111; }
+.reddit-bg { background: #ff5a0a; }
+
+@media (max-width: 640px) {
+  .service-box {
+    padding: 28px;
+  }
+
+  .service-box p {
+    font-size: 16px;
+  }
+}
