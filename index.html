@@ -2,11 +2,195 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta http-equiv="refresh" content="0; url=store.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Smm Gok</title>
+  <title>HaramBro</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Inter", sans-serif;
+      background: linear-gradient(135deg, #08111f, #0d47b5);
+      color: #fff;
+      min-height: 100vh;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .container {
+      width: min(1100px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    .topbar {
+      padding: 24px 0;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .brand {
+      font-size: 28px;
+      font-weight: 800;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 18px;
+    }
+
+    .nav-links a {
+      color: #dce6f5;
+      font-weight: 600;
+    }
+
+    .hero {
+      padding: 90px 0 70px;
+    }
+
+    .hero h1 {
+      font-size: clamp(38px, 7vw, 72px);
+      line-height: 1.05;
+      max-width: 760px;
+      margin-bottom: 18px;
+    }
+
+    .hero p {
+      max-width: 680px;
+      font-size: 18px;
+      line-height: 1.8;
+      color: #dbe7ff;
+      margin-bottom: 30px;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 52px;
+      padding: 0 24px;
+      border-radius: 999px;
+      font-weight: 800;
+    }
+
+    .btn-primary {
+      background: #9cff39;
+      color: #111;
+    }
+
+    .btn-secondary {
+      background: rgba(255,255,255,0.12);
+      color: #fff;
+      border: 1px solid rgba(255,255,255,0.18);
+    }
+
+    .preview {
+      padding: 20px 0 80px;
+    }
+
+    .preview-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(180px, 1fr));
+      gap: 18px;
+    }
+
+    .preview-card {
+      border-radius: 22px;
+      padding: 24px 18px;
+      min-height: 150px;
+      display: flex;
+      align-items: end;
+      font-size: 22px;
+      font-weight: 800;
+      box-shadow: 0 12px 30px rgba(0,0,0,.18);
+    }
+
+    .instagram { background: #f51085; }
+    .tiktok { background: #1f242b; }
+    .youtube { background: #ff3636; }
+    .discord { background: #5865f2; }
+
+    @media (max-width: 900px) {
+      .preview-grid {
+        grid-template-columns: repeat(2, minmax(180px, 1fr));
+      }
+    }
+
+    @media (max-width: 560px) {
+      .nav {
+        flex-direction: column;
+        gap: 14px;
+      }
+
+      .preview-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        padding-top: 60px;
+      }
+
+      .hero p {
+        font-size: 16px;
+      }
+    }
+  </style>
 </head>
 <body>
-  <p>Redirecting to <a href="store.html">store</a>...</p>
+  <header class="topbar">
+    <div class="container nav">
+      <div class="brand">HaramBro</div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="store.html">Store</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Professional Digital Service Pages with a Clean Modern Look</h1>
+        <p>
+          Explore our platform-based service pages and find the option that matches
+          your needs. Clean layout, separate service pages, and a modern storefront structure.
+        </p>
+
+        <div class="hero-actions">
+          <a href="store.html" class="btn btn-primary">Go to Store</a>
+          <a href="services/instagram.html" class="btn btn-secondary">View Example Service</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="preview">
+      <div class="container">
+        <div class="preview-grid">
+          <a href="services/instagram.html" class="preview-card instagram">Instagram</a>
+          <a href="services/tiktok.html" class="preview-card tiktok">TikTok</a>
+          <a href="services/youtube.html" class="preview-card youtube">YouTube</a>
+          <a href="services/discord.html" class="preview-card discord">Discord</a>
+        </div>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
